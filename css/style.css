@@ -529,6 +529,9 @@ body {
   z-index: 1;
   transition: width 0.3s linear;
 }
+.nav__link:hover:not(.nav__link--btn) {
+  /* Все кроме --btn */
+}
 .nav__link:hover:not(.nav__link--btn):after {
   width: 100%;
 }
@@ -541,4 +544,40 @@ body {
 .nav__link--btn:hover {
   background-color: #2b2a2c;
   color: #fff;
+}
+.intro__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10rem 0 12rem;
+  border-bottom: 1px solid rgba(106, 105, 107, 0.3);
+}
+.intro__content {
+  width: 50%;
+}
+.intro__subtitle {
+  margin-bottom: 0.4rem;
+  font-size: 3.2rem;
+  color: #2b2a2c;
+  font-weight: 200;
+}
+.intro__title {
+  margin-bottom: 0.6rem;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #2b2a2c;
+}
+.intro__text {
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  color: rgba(43, 42, 44, 0.7);
+}
+.intro__photo {
+  width: 50%;
+}
+.social {
+  margin-bottom: 4.2rem;
+}
+.social__link {
+  display: inline-block;
 }

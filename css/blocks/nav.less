@@ -2,24 +2,21 @@
 
 .nav {
   .dflex;
-
-  .vcenter
-  // height: 100%;
+  .vcenter;
 }
 
 .nav__link {
   position: relative;
-  
+
   font-size: 1.4rem;
   font-weight: 700;
   color: @black;
   text-transform: uppercase;
-  
-  
-  & + & {
+
+  &+& {
     margin-left: 2rem;
   }
-  
+
   &:after {
     .after;
 
@@ -29,23 +26,25 @@
     bottom: -.6rem;
     left: 0;
     z-index: 1;
-    
+
     transition: width .3s linear;
   }
-  
+
   &:hover:not(.nav__link--btn) {
+
+    /* Все кроме --btn */
     &:after {
       width: 100%;
     }
   }
-  
+
   &--btn {
     padding: 1rem 3rem;
     border: 2px solid @black;
     border-radius: 2rem;
 
-    transition: background-color .2s linear, color .2s linear ;
-    
+    transition: background-color .2s linear, color .2s linear;
+
     &:hover {
       background-color: @black;
       color: @white;
