@@ -1,9 +1,22 @@
 // main: ../style.less
 
 .social {
-    margin-bottom: 4.2rem;
+
+  .dflex;
+  margin-bottom: 4.2rem;
 }
 
 .social__link {
-    display: inline-block;
+  
+  margin-right: 1rem;
+
+  transition: transform .2s linear;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+  
+  img {
+    border-radius: 8px;
+  }
 }
