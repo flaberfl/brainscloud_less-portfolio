@@ -1,7 +1,7 @@
 // main: ../style.less
 
 .about {
-  margin: 12.6rem 0;
+  margin: 13rem 0;
 }
 
 .about__inner {
@@ -14,20 +14,45 @@
   width: 50%;
 }
 
+.about__photo {
+  position: relative;
+  
+  img {
+    position: relative;
+    z-index: 2;
+  }
+
+
+  &:before {
+    content: "";
+    position: absolute;
+    width: 41.3rem;
+    height: 41.3rem;
+    left: 2rem;
+    bottom: 0;
+    z-index: 1;
+
+    background-color: #efefef;
+  }
+
+}
+
 .about__content {
+  margin-top: 3rem;
   padding-left: 2rem;
 }
 
 .about__title {
   font-size: 4.5rem;
   font-weight: 700;
+  letter-spacing: -.15rem;
   color: @black;
   text-transform: uppercase;
 }
 
 .about__bigtitle {
   position: relative;
-  left: -1rem;
+  left: -.8rem;
   margin-bottom: 2.3rem;
 
   font-size: 9.2rem;
@@ -39,11 +64,10 @@
 
 .about__text {
   margin-bottom: 5rem;
-  padding-right: 14rem;
+  padding-right: 8.8rem;
 
   font-size: 1.2rem;
   font-weight: 300;
-  // letter-spacin g: .8px;
   line-height: 2;
   color: @gray;
 }
