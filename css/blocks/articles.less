@@ -1,0 +1,74 @@
+// main: ../style.less
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: 0 -1.5rem;
+}
+
+.articles__col {
+  width: 33.3333%;
+  padding: 0 1.5rem;
+}
+
+.articles__item {
+  margin-bottom: 2.2rem;
+}
+
+.articles__header {
+  position: relative;
+  margin-bottom: 2.2rem;
+}
+
+.articles__content {
+  margin-bottom: 3.1rem;
+}
+
+.articles__data {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  align-items: center;
+  width: 7.7rem;
+  height: 7.7rem;
+  top: 0;
+  left: 0;
+  
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: @white;
+  text-align: center;
+  background-color: @black;
+}
+
+.articles__title {
+  margin-bottom: 1.2rem;
+  
+  font-size: 1.8rem;
+  letter-spacing: .5px;
+  color: @black;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+}
+
+.articles__cat {
+  margin-bottom: 2.1rem;
+  
+  font-size: 1.2rem;
+  color: @black;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.articles__text {
+  font-size: 1.2rem;
+  color: @gray ;
+  font-weight: 300;
+  line-height: 2;
+}
