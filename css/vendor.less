@@ -1,71 +1,72 @@
 // main: style.less
 
-.dflex {
+
+.dflex () {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.frow {
+.frow () {
   flex-direction: row;
 }
 
-.fcolumn {
+.fcolumn () {
   flex-direction: column;
 }
 
-.jbetween {
+.jbetween () {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-.jcenter {
+.jcenter () {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
 }
 
-.jend {
+.jend () {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
 }
 
-.vtop {
+.vtop () {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
 }
 
-.vcenter {
+.vcenter () {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
-.vbottom {
+.vbottom () {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
 }
 
-.itop {
+.itop () {
   -ms-flex-item-align: start;
   align-self: flex-start;
 }
 
-.icenter {
+.icenter () {
   -ms-flex-item-align: center;
   align-self: center;
 }
 
-.ibottom {
+.ibottom () {
   -ms-flex-item-align: end;
   align-self: flex-end;
 }
 
-.after {
+.after () {
   content: "";
   display: block;
   position: absolute;
