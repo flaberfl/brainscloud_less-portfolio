@@ -1,12 +1,69 @@
 // main: ../style.less
 
 .footer {
-  padding: 2rem 0;
+  padding: 1.6rem 0;
 
   background-color: @black;
+
+  margin-bottom: 20rem;
 }
 
 .footer__inner {
   .dflex;
   .jbetween;
+}
+
+.footer__credits {
+  .dflex;
+  .vcenter;
+}
+
+.footer__copyright {
+  padding-right: 1.2rem;
+  margin-right: 1.6rem;
+
+  font-size: 1.4rem;
+  color: #BBBBCC;
+
+  border-right: 1px solid fade(@gray, 35%);
+}
+
+.footer__social {
+  .dflex;
+  .vcenter;
+
+  a {
+    margin-right: 1.7rem;
+  }
+}
+
+.footer__nav {
+  .dflex;
+  .vcenter;
+  font-size: 1.4rem;
+}
+
+.footer__nav-link {
+  margin-left: 1.4rem;
+
+  color: #BBBBCC;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &--btn {
+    padding: .8rem 1.2rem;
+
+    border: 1px solid @gray-lite;
+    border-radius: 2rem;
+
+    transition: border-color .2s linear;
+
+    &:hover {
+      text-decoration: none;
+      border: 1px dotted @gray;
+    }
+  }
+
 }
