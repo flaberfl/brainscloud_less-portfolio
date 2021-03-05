@@ -1,11 +1,25 @@
 // main: ../style.less
 
 .modal {
+  .dflex;
+  padding: 0 1rem;
   width: 100%;
   height: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
+  // background-color: fade(@black, 80%);
+  background-color: rgba(6, 15, 49, .9);
   z-index: 1000;
-  bottom: 0;
   overflow: hidden;
-  background-color: fade(@black, 80%);
+}
+
+.modal__dialog {
+  width: 100%;
+  max-width: @grid-width;
+  margin: auto;
+
+  padding: 2rem;
+  background-color: @white;
+  
 }
