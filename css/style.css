@@ -378,6 +378,14 @@ textarea {
   color: #000;
   padding: 0.2em 0;
 }
+.text-center {
+  text-align: center;
+}
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 *,
 *:before,
 *:after {
@@ -902,41 +910,6 @@ body.no__scroll {
   text-decoration: none;
   border: 1px dotted #6a696b;
 }
-.modal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 1rem;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(6, 15, 49, 0.9);
-  z-index: 1000;
-  overflow: auto;
-}
-.modal__dialog {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-  position: relative;
-  background-color: #fff;
-}
-.modal__close {
-  padding: 0;
-  background: none;
-  border: 0;
-  font-family: inherit;
-  position: absolute;
-  top: 1.3rem;
-  right: 1.3rem;
-  z-index: 1;
-  transition: transform 0.2s linear;
-}
-.modal__close:hover {
-  transform: rotate(-90deg);
-}
 .modal-work {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1026,12 +999,4 @@ body.no__scroll {
   font-size: 1.4rem;
   color: #2b2a2c;
   text-transform: uppercase;
-}
-.text-center {
-  text-align: center;
-}
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
 }
