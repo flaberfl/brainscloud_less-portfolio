@@ -2,9 +2,9 @@
 
 .modal {
   .dflex;
-  padding: 1rem;
   .w100;
   .h100;
+  padding: 1rem;
   position: fixed;
   top: 0;
   left: 0;
@@ -12,7 +12,9 @@
   background-color: rgba(6, 15, 49, .9);
   z-index: 1000;
   overflow: auto;
+
   // display: none;
+
 }
 
 .modal__dialog {
@@ -37,4 +39,18 @@
   &:hover {
     transform: rotate(-90deg);
   }
+}
+
+.modal__content {
+  padding: 7.5rem 1.5rem;
+}
+
+.modal__title {
+  margin-bottom: 7.7rem;
+
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: @black;
+  text-transform: uppercase;
+  .text-center;
 }

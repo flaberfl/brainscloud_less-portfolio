@@ -15,7 +15,8 @@
   line-height: 1.1;
   color: @black;
   text-transform: uppercase;
-  text-align: center;
+  letter-spacing: .6px;
+  .text-center;
 
   transition: background-color .2s linear, color .2s linear, box-shadow .2s linear, border-color .2s linear;
 
@@ -27,7 +28,7 @@
   }
 
   &+& {
-    margin-left: 1.5rem;
+    margin-left: 1.1rem;
   }
 
   &--sm {
@@ -38,4 +39,14 @@
     font-weight: 700;
     border-width: .2rem;
   }
+
+  &--thin {
+    min-width: 14.5rem;
+    
+    padding-right: 1.4em;
+    padding-left: 1.4em;
+    
+    font-size: 1.2rem;
+  }
+
 }

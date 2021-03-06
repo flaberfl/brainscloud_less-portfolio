@@ -381,6 +381,9 @@ textarea {
 .text-center {
   text-align: center;
 }
+.text-right {
+  text-align: right;
+}
 .img {
   display: block;
   max-width: 100%;
@@ -560,6 +563,7 @@ body.no__scroll {
   line-height: 1.1;
   color: #2b2a2c;
   text-transform: uppercase;
+  letter-spacing: 0.6px;
   text-align: center;
   transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
 }
@@ -570,7 +574,7 @@ body.no__scroll {
   border-color: #2b2a2c;
 }
 .btn + .btn {
-  margin-left: 1.5rem;
+  margin-left: 1.1rem;
 }
 .btn--sm {
   padding: 0.8em 1.4em;
@@ -578,6 +582,12 @@ body.no__scroll {
   font-size: 1.4rem;
   font-weight: 700;
   border-width: 0.2rem;
+}
+.btn--thin {
+  min-width: 14.5rem;
+  padding-right: 1.4em;
+  padding-left: 1.4em;
+  font-size: 1.2rem;
 }
 .works {
   margin: 4.2rem 0;
@@ -757,7 +767,7 @@ body.no__scroll {
 }
 .news {
   margin-top: 22.2rem;
-  margin-bottom: 8rem;
+  margin-bottom: 11.2rem;
 }
 .news__header {
   text-align: center;
@@ -894,21 +904,69 @@ body.no__scroll {
   font-size: 1.4rem;
 }
 .footer__nav-link {
-  margin-left: 1.4rem;
+  margin-left: 1.5rem;
   color: #BBBBCC;
 }
 .footer__nav-link:hover {
   text-decoration: underline;
 }
 .footer__nav-link--btn {
-  padding: 0.8rem 1.2rem;
+  padding: 0.8rem 2.1rem;
   border: 1px solid #8d8d8e;
   border-radius: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
   transition: border-color 0.2s linear;
 }
 .footer__nav-link--btn:hover {
   text-decoration: none;
   border: 1px dotted #6a696b;
+}
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(6, 15, 49, 0.9);
+  z-index: 1000;
+  overflow: auto;
+}
+.modal__dialog {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  position: relative;
+  background-color: #fff;
+}
+.modal__close {
+  padding: 0;
+  background: none;
+  border: 0;
+  font-family: inherit;
+  position: absolute;
+  top: 1.3rem;
+  right: 1.3rem;
+  z-index: 1;
+  transition: transform 0.2s linear;
+}
+.modal__close:hover {
+  transform: rotate(-90deg);
+}
+.modal__content {
+  padding: 7.5rem 1.5rem;
+}
+.modal__title {
+  margin-bottom: 7.7rem;
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: #2b2a2c;
+  text-transform: uppercase;
+  text-align: center;
 }
 .modal-work {
   display: -webkit-box;
@@ -999,4 +1057,94 @@ body.no__scroll {
   font-size: 1.4rem;
   color: #2b2a2c;
   text-transform: uppercase;
+}
+.timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin: 6.6rem auto;
+  max-width: 76.8rem;
+  position: relative;
+  color: #2b2a2c;
+}
+.timeline:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  background-color: #2b2a2c;
+}
+.timeline__col {
+  width: 50%;
+}
+.timeline__col--left {
+  padding-right: 4.8rem;
+  text-align: right;
+}
+.timeline__col--right {
+  padding-left: 4.8rem;
+}
+.timeline__title {
+  margin-bottom: 3.8rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.timeline__item {
+  margin-bottom: 4.2rem;
+}
+.timeline__item:last-child {
+  margin-bottom: 0;
+}
+.timeline__date {
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.timeline__subtitle {
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.timeline__position {
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic;
+}
+.timeline__text {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: #6a696b;
+  line-height: 1.8rem;
+}
+.progress-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.progress-bar__title {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.progress-bar__right {
+  padding-left: 1.8rem;
+}
+.progress-bar__item {
+  width: 13.9rem;
+  height: 0.6rem;
+  background-color: #EFEFEF;
+}
+.progress-bar__progress {
+  height: 100%;
+  background-color: #8d8d8e;
+  transition: width 0.2s linear;
 }
