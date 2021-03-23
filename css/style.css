@@ -943,6 +943,9 @@ body.no__scroll {
   position: relative;
   background-color: #fff;
 }
+.modal__dialog--sm {
+  max-width: 90rem;
+}
 .modal__close {
   padding: 0;
   background: none;
@@ -1124,12 +1127,16 @@ body.no__scroll {
   line-height: 1.8rem;
 }
 .progress-bar {
+  margin-bottom: 4.2rem;
+}
+.progress-bar__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 .progress-bar__title {
   font-size: 1.4rem;
@@ -1138,13 +1145,13 @@ body.no__scroll {
 .progress-bar__right {
   padding-left: 1.8rem;
 }
-.progress-bar__item {
+.progress-bar__bar {
   width: 13.9rem;
   height: 0.6rem;
   background-color: #EFEFEF;
 }
 .progress-bar__progress {
   height: 100%;
-  background-color: #8d8d8e;
+  background-color: #6a696b;
   transition: width 0.2s linear;
 }

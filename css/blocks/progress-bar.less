@@ -1,7 +1,13 @@
 // main: ../style.less
+
 .progress-bar {
+    margin-bottom: 4.2rem;
+}
+
+.progress-bar__item {
     .dflex;
-    .vbottom;
+    .vcenter;
+    margin-bottom: 1rem;
 }
 
 .progress-bar__title {
@@ -13,7 +19,7 @@
     padding-left: 1.8rem;
 }
 
-.progress-bar__item {
+.progress-bar__bar {
     width: 13.9rem;
     height: .6rem;
 
@@ -23,7 +29,7 @@
 .progress-bar__progress {
     .h100;
 
-    background-color: @gray-lite;
+    background-color: @gray;
 
     transition: width .2s linear;
 }
