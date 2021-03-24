@@ -11,6 +11,7 @@
 .form__label {
   display: inline-block;
   margin-bottom: 1.6rem;
+  margin-left: 2rem;
 
   font-size: 1.2rem;
   font-weight: 700;
@@ -29,14 +30,18 @@
 
   font-family: inherit;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 300;
+  color: @black;
 
   transition: border-color .2s linear;
 
   &:focus {
     outline: none;
-
     border-color: #5f60e4;
+  }
+
+  &::placeholder {
+    color: @black;
   }
 }
 

@@ -1190,6 +1190,7 @@ body.no__scroll {
 .form__label {
   display: inline-block;
   margin-bottom: 1.6rem;
+  margin-left: 2rem;
   font-size: 1.2rem;
   font-weight: 700;
   color: #2b2a2c;
@@ -1203,13 +1204,18 @@ body.no__scroll {
   border-radius: 2.7rem;
   font-family: inherit;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 300;
+  color: #2b2a2c;
   transition: border-color 0.2s linear;
 }
 .form__input:focus,
 .form__textarea:focus {
   outline: none;
   border-color: #5f60e4;
+}
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: #2b2a2c;
 }
 .form__textarea {
   height: 20rem;
