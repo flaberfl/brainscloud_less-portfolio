@@ -935,6 +935,8 @@ body.no-scroll {
   margin: auto;
   position: relative;
   background-color: #fff;
+  transform: rotateX(90deg);
+  transition: transform 0.2s linear;
 }
 .modal__dialog--sm {
   max-width: 90rem;
