@@ -1154,7 +1154,7 @@ body.no__scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url(https://placehold.it/480x700) right center no-repeat;
+  background: url(https://via.placeholder.com/480x700) right center no-repeat;
 }
 .contact__left {
   width: 47%;
@@ -1244,4 +1244,7 @@ body.no__scroll {
 }
 .mr-0 {
   margin-right: 0;
+}
+.hide {
+  display: none;
 }
