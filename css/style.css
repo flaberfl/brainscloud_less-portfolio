@@ -488,6 +488,21 @@ body.no-scroll {
   background-color: #2b2a2c;
   color: #fff;
 }
+.burger {
+  width: 3rem;
+  height: 3rem;
+  display: none;
+}
+@media (max-width: 767px) {
+  .burger {
+    display: block;
+  }
+}
+.burger__icon {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 .intro__inner {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -497,6 +512,11 @@ body.no-scroll {
   background: url("../images/back.png") right top no-repeat;
   background-size: 50%;
   border-bottom: 1px solid rgba(106, 105, 107, 0.3);
+}
+@media (max-width: 991px) {
+  .intro__inner {
+    padding: 4rem 0 5rem;
+  }
 }
 .intro__content {
   width: 50%;
@@ -522,6 +542,11 @@ body.no-scroll {
   position: absolute;
   right: 13.5rem;
   bottom: 0;
+}
+@media (max-width: 991px) {
+  .intro__photo {
+    width: 25rem;
+  }
 }
 .social {
   display: -webkit-box;
