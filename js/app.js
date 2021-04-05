@@ -36,4 +36,35 @@ $(function () {
     // console.log(cat);
 
   });
+
+
+  /* =================MODAL================= */
+
+  const modalCall = $('[data-modal]');
+  const modalClose = $('[data-close]');
+
+
+  modalCall.on('click', function (event) {
+    event.preventDefault();
+
+    let $this = $(this);
+    let modalID = $this.data('modal');
+
+    $(modalID).addClass('show');
+    $("body").addClass('no-scroll');
+    
+
+  })
+
+  modalClose.on('click', function (event) {
+    event.preventDefault();
+
+    let $this = $(this);
+    let modalParent = $this.parents('.modal');
+
+    modalParent.removeClass('show');
+    $("body").removeClass('no-scroll');
+
+  })
+
 });

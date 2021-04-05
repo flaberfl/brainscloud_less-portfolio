@@ -394,7 +394,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
 }
-body.no__scroll {
+body.no-scroll {
   overflow: hidden;
 }
 .container {
@@ -925,6 +925,9 @@ body.no__scroll {
   z-index: 1000;
   overflow: auto;
   display: none;
+}
+.modal.show {
+  display: flex;
 }
 .modal__dialog {
   width: 100%;
