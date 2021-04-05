@@ -924,6 +924,7 @@ body.no__scroll {
   background-color: rgba(6, 15, 49, 0.9);
   z-index: 1000;
   overflow: auto;
+  display: none;
 }
 .modal__dialog {
   width: 100%;
