@@ -52,7 +52,7 @@ $(function () {
 
     $(modalID).addClass('show');
     $("body").addClass('no-scroll');
-    
+
 
   })
 
@@ -65,6 +65,16 @@ $(function () {
     modalParent.removeClass('show');
     $("body").removeClass('no-scroll');
 
+  })
+
+  $('.modal').on('click', function (event) {
+
+    $(this).removeClass('show');
+    $("body").removeClass('no-scroll');
+  })
+
+  $('.modal__dialog').on('click', function (event) {
+    event.stopPropagation();
   })
 
 });
