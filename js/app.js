@@ -54,7 +54,6 @@ $(function () {
     $("body").addClass('no-scroll');
 
     setTimeout(function () {
-
       $(modalID).find('.modal__dialog').css({
         transform: 'rotateX(0)'
       });
@@ -80,18 +79,17 @@ $(function () {
   $('.modal').on('click', function (event) {
     let $this = $(this);
 
-    $(this).find('.modal__dialog').css({
+    $this.find('.modal__dialog').css({
       transform: 'rotateX(90deg)'
     });
 
     setTimeout(function () {
-      $(this).removeClass('show');
+      $this.removeClass('show');
       $("body").removeClass('no-scroll');
     }, 200);
-
-  })
+  });
 
   $('.modal__dialog').on('click', function (event) {
     event.stopPropagation();
-  })
+  });
 });
