@@ -6,7 +6,6 @@
 
 .about__inner {
   .dflex;
-  // max-width: 109rem;
 }
 
 .about__photo,
@@ -18,7 +17,8 @@
   position: relative;
   
   img {
-    position: relative;
+    position: absolute;
+    bottom: 0;
     z-index: 2;
   }
 
@@ -26,6 +26,7 @@
   &:before {
     content: "";
     position: absolute;
+    display: block;
     width: 41.3rem;
     height: 41.3rem;
     left: 2rem;
@@ -33,8 +34,12 @@
     z-index: 1;
 
     background-color: #efefef;
-  }
 
+    @media @notebook{
+      .w100;
+      height: 30rem;
+   }
+  }
 }
 
 .about__content {
@@ -48,6 +53,10 @@
   letter-spacing: -.15rem;
   color: @black;
   text-transform: uppercase;
+
+  @media @notebook{
+    font-size: 4rem;
+ }
 }
 
 .about__bigtitle {
@@ -60,6 +69,10 @@
   line-height: 1.1;
   color: fade(@black, 15%); 
   text-transform: uppercase;
+
+  @media @notebook{
+    font-size: 6.2rem;
+ }
 }
 
 .about__text {

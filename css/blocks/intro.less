@@ -16,6 +16,10 @@
 
 .intro__content {
   width: 50%;
+
+  @media @mobile-sm {
+    width: 100%;
+ }
 }
 
 .intro__subtitle {
@@ -56,5 +60,9 @@
 
   @media @tablet {
     width: 25rem;
+  }
+
+  @media @mobile-sm {
+     display: none;
   }
 }
