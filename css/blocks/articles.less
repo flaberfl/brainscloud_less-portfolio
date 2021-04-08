@@ -10,10 +10,20 @@
 .articles__col {
   width: 33.3333%;
   padding: 0 1.5rem;
+
+  @media @mobile {
+    .w100;
+    margin-bottom: 2.6rem;
+  }
 }
 
 .articles__item {
   margin-bottom: 2.2rem;
+
+  @media @mobile {
+    max-width: 37rem;
+    margin: 0 auto;
+  }
 }
 
 .articles__header {
