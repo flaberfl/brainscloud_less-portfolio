@@ -69,14 +69,24 @@
       background-color: @black;
       color: @white;
     }
+
+    @media @mobile {
+      max-width: 12.8rem;
+      margin: 0 auto;
+    }
   }
 
   @media @mobile {
     .w100;
-    padding: .5rem 1rem;
+    padding: .5rem 0;
+    margin-bottom: 1.5rem;
+
+    &:after {
+      display: none;
+    }
 
     &+& {
-      margin-left: 0;
+      margin-left: auto;
     }
   }
 }

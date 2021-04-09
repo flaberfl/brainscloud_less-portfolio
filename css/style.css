@@ -382,6 +382,7 @@ textarea {
 *:before,
 *:after {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 html {
   font-size: 62.5%;
@@ -523,12 +524,22 @@ body.no-scroll {
   color: #fff;
 }
 @media (max-width: 767px) {
+  .nav__link--btn {
+    max-width: 12.8rem;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
   .nav__link {
     width: 100%;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0;
+    margin-bottom: 1.5rem;
+  }
+  .nav__link:after {
+    display: none;
   }
   .nav__link + .nav__link {
-    margin-left: 0;
+    margin-left: auto;
   }
 }
 .burger {
