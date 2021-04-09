@@ -406,6 +406,18 @@ body.no-scroll {
 }
 .header {
   padding: 1.8rem 0;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+  }
 }
 .header__inner {
   display: -webkit-box;
@@ -449,6 +461,7 @@ body.no-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -457,6 +470,21 @@ body.no-scroll {
 @media (max-width: 767px) {
   .nav {
     display: none;
+    position: absolute;
+    padding: 1rem;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .3);
+    text-align: center;
+  }
+  .nav.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 .nav__link {
@@ -494,9 +522,22 @@ body.no-scroll {
   background-color: #2b2a2c;
   color: #fff;
 }
+@media (max-width: 767px) {
+  .nav__link {
+    width: 100%;
+    padding: 0.5rem 1rem;
+  }
+  .nav__link + .nav__link {
+    margin-left: 0;
+  }
+}
 .burger {
   width: 3rem;
   height: 3rem;
+  padding: 0;
+  background: none;
+  border: 0;
+  font-family: inherit;
   display: none;
 }
 @media (max-width: 767px) {
@@ -508,6 +549,9 @@ body.no-scroll {
   display: block;
   width: 100%;
   height: auto;
+}
+.intro {
+  margin-top: 10rem;
 }
 .intro__inner {
   display: -webkit-box;

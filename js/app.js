@@ -93,3 +93,15 @@ $(function () {
     event.stopPropagation();
   });
 });
+
+
+/* ====================== Mobile Nav ===================== */
+
+const navToogle = $('#navToggle');
+const nav = $('#nav');
+
+navToogle.on('click', function (event) {
+  event.preventDefault();
+
+  nav.toggleClass('show');
+});
