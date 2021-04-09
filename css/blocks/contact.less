@@ -2,8 +2,11 @@
 
 .contact {
   .dflex;
-  background: url(https://via.placeholder.com/480x700) right center no-repeat;
+  // background: url(https://via.placeholder.com/480x700) right center no-repeat;
 
+  @media @mobile {
+    .fww;
+  }
 }
 
 .contact__left {
@@ -31,4 +34,22 @@
 
 .contact__info-icon {
   margin-right: 1rem;
+}
+
+.contact__right {
+  width: 53%;
+  .dflex;
+  .vcenter;
+
+  img {
+    .w100;
+  }
+}
+
+.contact__left,
+.contact__right {
+
+  @media @mobile {
+    .w100;
+  }
 }

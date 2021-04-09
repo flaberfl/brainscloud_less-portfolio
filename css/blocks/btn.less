@@ -38,29 +38,38 @@
     font-size: 1.4rem;
     font-weight: 700;
     border-width: .2rem;
-  }
 
+  }
+  
   &--thin {
     min-width: 14.5rem;
     padding-right: 1.4em;
     padding-left: 1.4em;
-
+    
     font-size: 1.2rem;
   }
-
+  
   @media @tablet {
     padding: 1em 1.4em;
     min-width: 12rem;
-
+    
     font-size: 1.2rem;
   }
-
+  
   @media @mobile-sm {
     display: block;
-    width: 100%;
+    max-width: 15rem;
+    margin: 0 auto;
+    
+    @media @mobile-sm {
+
+      &--sm {
+        max-width: 18rem;
+      }
+    }
 
     &+& {
-      margin-left: 0;
+      margin: auto;
       margin-top: 1rem;
     }
   }

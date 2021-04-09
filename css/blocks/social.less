@@ -3,19 +3,26 @@
 .social {
   .dflex;
   margin-bottom: 4.2rem;
+
+  @media @mobile-sm {
+    .jcenter;
+  }
 }
 
 .social__link {
-  
   margin-right: 1rem;
 
   transition: transform .2s linear;
 
-  &:hover {
-    transform: translateY(-5px);
+  &:last-child {
+    margin-right: 0;
   }
-  
+
+  &:hover {
+    transform: translateY(-.5rem);
+  }
+
   img {
-    border-radius: 8px;
+    border-radius: .8rem;
   }
 }
