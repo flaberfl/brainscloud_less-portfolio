@@ -382,7 +382,6 @@ textarea {
 *:before,
 *:after {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 html {
   font-size: 62.5%;
