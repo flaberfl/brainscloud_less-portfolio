@@ -112,8 +112,8 @@ navToogle.on('click', function (event) {
 
 // собираем все якоря; устанавливаем время анимации и количество кадров
 const anchors = [].slice.call(document.querySelectorAll('a[href*="#"]')),
-      animationTime = 500,
-      framesCount = 30;
+      animationTime = 600,
+      framesCount = 60;
 
 anchors.forEach(function(item) {
   // каждому якорю присваиваем обработчик события
