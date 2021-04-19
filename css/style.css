@@ -1278,6 +1278,7 @@ body.no-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .modal-work {
@@ -1287,7 +1288,6 @@ body.no-scroll {
 .modal-work__preview {
   position: relative;
   width: 65%;
-  overflow: hidden;
 }
 @media (max-width: 767px) {
   .modal-work__preview {

@@ -2,6 +2,7 @@
 
 .modal-work {
   .dflex;
+  overflow: hidden;
 
   @media @mobile {
     .fww;
@@ -11,7 +12,7 @@
 .modal-work__preview {
   position: relative;
   width: 65%;
-  overflow: hidden;
+
 
   @media @mobile {
     .w100;
@@ -24,6 +25,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
+
+  
   transform: translate3d(-50%, -50%, 0);
   /* Посередине */
   z-index: 1;
