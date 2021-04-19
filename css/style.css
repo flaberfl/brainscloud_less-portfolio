@@ -1226,7 +1226,9 @@ body.no-scroll {
   max-width: 1200px;
   margin: auto;
   position: relative;
+  border-radius: 16px;
   background-color: #fff;
+  overflow: hidden;
   transform: rotateX(90deg);
   transition: transform 0.2s linear;
 }
