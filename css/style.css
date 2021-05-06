@@ -391,9 +391,9 @@ textarea {
         }
     }*/
 .adu {
-  -webkit-transform: translate(0px, 120%);
-  -ms-transform: translate(0px, 120%);
-  transform: translate(0px, 120%);
+  -webkit-transform: translate(0px, 100%);
+  -ms-transform: translate(0px, 100%);
+  transform: translate(0px, 100%);
   opacity: 0;
   -webkit-transition: all 1s ease 0s;
   -o-transition: all 1s ease 0s;
@@ -406,9 +406,9 @@ textarea {
   opacity: 1;
 }
 .aud {
-  -webkit-transform: translate(0px, -120%);
-  -ms-transform: translate(0px, -120%);
-  transform: translate(0px, -120%);
+  -webkit-transform: translate(0px, -100%);
+  -ms-transform: translate(0px, -100%);
+  transform: translate(0px, -100%);
   opacity: 0;
   -webkit-transition: all 1s ease 0s;
   -o-transition: all 1s ease 0s;
@@ -421,9 +421,9 @@ textarea {
   opacity: 1;
 }
 .alr {
-  -webkit-transform: translate(-120%, 0px);
-  -ms-transform: translate(120% 0px);
-  transform: translate(-120%, 0px);
+  -webkit-transform: translate(-100%, 0px);
+  -ms-transform: translate(-100%, 0px);
+  transform: translate(-100%, 0px);
   opacity: 0;
   -webkit-transition: all 1s ease 0s;
   -o-transition: all 1s ease 0s;
@@ -436,9 +436,9 @@ textarea {
   opacity: 1;
 }
 .arl {
-  -webkit-transform: translate(120%, 0px);
-  -ms-transform: translate(120%, 0px);
-  transform: translate(120%, 0px);
+  -webkit-transform: translate(100%, 0px);
+  -ms-transform: translate(2100% 0px);
+  transform: translate(100%, 0px);
   opacity: 0;
   -webkit-transition: all 1s ease 0s;
   -o-transition: all 1s ease 0s;
@@ -1297,6 +1297,12 @@ body.no-scroll {
   .footer__nav-link {
     margin: 0 0.5rem 0.8rem;
   }
+}
+.footer__social a {
+  padding: 0px 0px 4px 0px;
+}
+.footer__social a:hover {
+  border-bottom: 1px solid #6a696b;
 }
 .modal {
   display: -webkit-box;
