@@ -3,7 +3,7 @@
 .articles {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -1.5rem;
+  margin: 0 -1.5rem 2rem;
 }
 
 .articles__col {
@@ -17,6 +17,11 @@
 }
 
 .articles__item {
+  .dflex;
+  .fcolumn;
+  .vtop;
+  .h100;
+  
   margin-bottom: 2.2rem;
 
   @media @mobile {
@@ -31,6 +36,8 @@
 }
 
 .articles__content {
+  flex: 1 1 auto;
+
   margin-bottom: 3.1rem;
 }
 
@@ -67,6 +74,7 @@
 }
 
 .articles__cat {
+  flex: 1 1 auto;
   margin-bottom: 2.1rem;
   
   font-size: 1.2rem;
